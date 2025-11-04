@@ -1,0 +1,7 @@
+{
+  "name": "Real Estate Client Intake Form",
+  "description": "A dynamic, mobile-first intake form for real estate agents to efficiently capture new client information for buyers, sellers, or both, now with AI-powered voice input.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
