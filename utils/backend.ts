@@ -21,7 +21,7 @@ import type { FormData } from "../types";
  * @param {Blob} pdfBlob - The generated PDF file as a Blob.
  * @returns {Promise<void>} - A promise that resolves when the submission is complete.
  */
-export const submitDataToBackend = async (formData: FormData, pdfBlob: Blob): Promise<void> => {
+export const submitDataToBackend = async (formData: FormData): Promise<void> => {
   // ▼▼▼ PASTE YOUR ZAPIER WEBHOOK URL HERE ▼▼▼
   // Example: const webhookUrl = 'https://hooks.zapier.com/hooks/catch/123456/abcdef/';
   const webhookUrl = 'ZAPIER_WEBHOOK_URL_PLACEHOLDER';
