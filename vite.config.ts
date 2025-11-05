@@ -16,6 +16,7 @@ export default defineConfig({
         short_name: 'FG Intake App',
         description: 'Real Estate Client Intake Form',
         theme_color: '#06b6d4',
+        revision: new Date().getTime().toString(),
         icons: [
           {
             src: 'https://soilgrowerx.github.io/real-estate-intake/logo-black.png',
