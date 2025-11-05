@@ -100,6 +100,10 @@ export const processTranscriptWithAI = async (transcript: string): Promise<Parti
             },
         });
 
+        if (!response.text) {
+            throw new Error("The AI response was empty.");
+        }
+
         const jsonText = response.text.trim();
         const parsedData = JSON.parse(jsonText);
 

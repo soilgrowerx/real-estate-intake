@@ -1,4 +1,4 @@
-import { FormData } from "../types";
+import type { FormData } from "../types";
 
 /**
  * Handles the submission of form data and the generated PDF to a no-code automation
