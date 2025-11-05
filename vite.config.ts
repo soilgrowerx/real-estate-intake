@@ -17,16 +17,8 @@ export default defineConfig({
         description: 'Real Estate Client Intake Form',
         theme_color: '#06b6d4',
         icons: [
-          {
-            src: import.meta.env.BASE_URL + 'logo-black.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: import.meta.env.BASE_URL + 'logo-black.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
+            src: '/real-estate-intake/logo-black.png',
+            src: '/real-estate-intake/logo-black.png',
         ],      },
     })
   ],
