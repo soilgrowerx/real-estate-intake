@@ -262,11 +262,11 @@ const App: React.FC = () => {
     setError(null);
 
     try {
-      // setSubmitStatus('Generating PDF...');
-      // const pdfBlob = await generateIntakePDF(formData);
+      setSubmitStatus('Generating PDF...');
+      const pdfBlob = await generateIntakePDF(formData);
 
       setSubmitStatus('Sending data to services...');
-      await submitDataToBackend(formData);
+      await submitDataToBackend(formData, pdfBlob);
       
       setSubmitStatus('Submission successful!');
       alert('Form submitted successfully! The data has been sent to Google Sheets, emailed, and a PDF was saved to Google Drive.');
