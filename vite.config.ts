@@ -28,3 +28,7 @@ export default defineConfig({
             type: 'image/svg+xml',
           },
         ],
+      },
+    })
+  ],
+})
