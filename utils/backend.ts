@@ -55,18 +55,12 @@ export const submitDataToBackend = async (formData: FormData, pdfBlob: Blob): Pr
   try {
     const response = await fetch(webhookUrl, {
       method: 'POST',
+      mode: 'no-cors',
       body: submissionData,
       // Note: Do not set 'Content-Type' header. The browser sets it correctly 
       // for FormData, which is required for file uploads to work.
     });
 
-    if (!response.ok) {
-      const errorBody = await response.text();
-      throw new Error(`The automation service responded with ${response.status}: ${errorBody}`);
-    }
-
-    const result = await response.json();
-    console.log('Automation service response:', result);
     return; // Indicates success
 
   } catch (error) {
