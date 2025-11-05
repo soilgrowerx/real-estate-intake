@@ -15,7 +15,7 @@ git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
-git remote add origin https://github.com/<YOUR_USERNAME>/<YOUR_REPO_NAME>.git
+git remote add origin https://github.com/soilgrowerx/real-estate-intake.git
 git push -u origin main
 ```
 
@@ -26,14 +26,12 @@ You need to tell the application where it will be hosted.
 1.  **`package.json`**:
     -   Open the `package.json` file.
     -   Find the `"homepage"` line.
-    -   Replace `<YOUR_GITHUB_USERNAME>` and `<YOUR_REPO_NAME>` with your actual GitHub username and repository name.
+    -   Replace `<YOUR_GITHUB_USERNAME>` with your actual GitHub username.
     -   Example: `"homepage": "https://john-doe.github.io/real-estate-intake",`
 
 2.  **`vite.config.ts`**:
     -   Open the `vite.config.ts` file.
-    -   Find the `base` property.
-    -   Replace `<YOUR_REPO_NAME>` with your repository name.
-    -   Example: `base: '/real-estate-intake/',`
+    -   Confirm the `base` property is set to `'/real-estate-intake/'`.
 
 Commit and push these changes:
 ```bash

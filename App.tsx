@@ -80,8 +80,6 @@ const App: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState('');
   
-  // FIX: Replaced 'SpeechRecognition' with 'any' to resolve a TypeScript error as the
-  // browser's SpeechRecognition API type is not recognized in this environment.
   const recognitionRef = useRef<any | null>(null);
   const finalTranscriptRef = useRef<string>('');
 
@@ -174,7 +172,6 @@ const App: React.FC = () => {
       try {
         const aiData = await processTranscriptWithAI(transcript);
         
-        // Format phone numbers from AI response before merging
         if (aiData.client?.phone) {
           aiData.client.phone = formatPhoneNumber(aiData.client.phone);
         }
@@ -189,7 +186,7 @@ const App: React.FC = () => {
         setError('Could not process the audio. Please try again.');
         setStatus('Error processing. Listening again.');
       }
-    }, 2000), // Process after 2 seconds of pause
+    }, 2000),
     []
   );
 
@@ -225,7 +222,6 @@ const App: React.FC = () => {
         };
 
         recognitionRef.current.onend = () => {
-            // It might end unexpectedly, so we toggle state if it's still marked as recording
             if (isRecording) {
                 setIsRecording(false);
                 setStatus('Recording stopped.');
@@ -241,7 +237,7 @@ const App: React.FC = () => {
       }
       recognitionRef.current.start();
 
-    } else { // Not recording
+    } else { 
         if (recognitionRef.current) {
             recognitionRef.current.stop();
             recognitionRef.current = null;
@@ -249,7 +245,6 @@ const App: React.FC = () => {
         }
     }
 
-    // Cleanup on component unmount
     return () => {
         if (recognitionRef.current) {
             recognitionRef.current.stop();
@@ -275,7 +270,7 @@ const App: React.FC = () => {
       
       setSubmitStatus('Submission successful!');
       alert('Form submitted successfully! The data has been sent to Google Sheets, emailed, and a PDF was saved to Google Drive.');
-      setFormData(initialState); // Reset form on success
+      setFormData(initialState); 
 
     } catch (error) {
         console.error('Submission failed:', error);
@@ -283,7 +278,6 @@ const App: React.FC = () => {
         setSubmitStatus('Submission failed.');
         alert(`Submission failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
     } finally {
-        // Wait a moment before clearing the status
         setTimeout(() => {
             setIsSubmitting(false);
             setSubmitStatus('');
@@ -420,21 +414,12 @@ const App: React.FC = () => {
               )}
             </div>
           )}
-        </form>
-      </main>
-
-       <FloatingMicButton 
-          onClick={() => setIsRecording(prev => !prev)} 
-          isRecording={isRecording}
-       />
-      
-       {formData.clientType && (
+          {formData.clientType && (
             <footer className="fixed bottom-0 left-0 right-0 bg-gray-900/80 backdrop-blur-sm p-4 z-10">
                 {(isRecording || isSubmitting) && <StatusBar status={isSubmitting ? submitStatus : status} error={error}/>}
                 <div className="max-w-4xl mx-auto pt-4 border-t border-gray-700">
                     <button 
                         type="submit" 
-                        onClick={handleSubmit}
                         disabled={isSubmitting}
                         className="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-4 rounded-lg transition-colors duration-300 text-lg shadow-cyan-500/50 shadow-lg disabled:bg-gray-600 disabled:cursor-not-allowed disabled:shadow-none flex items-center justify-center"
                     >
@@ -452,7 +437,15 @@ const App: React.FC = () => {
                     </button>
                 </div>
             </footer>
-       )}
+          )}
+        </form>
+      </main>
+
+       <FloatingMicButton 
+          onClick={() => setIsRecording(prev => !prev)} 
+          isRecording={isRecording}
+       />
+      
     </div>
   );
 };

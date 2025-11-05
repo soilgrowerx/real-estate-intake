@@ -17,13 +17,23 @@ import { FormData } from "../types";
  * 
  * This approach is secure, requires no backend coding, and is very easy to manage.
  *
- * @param {object} formData - The structured data from the intake form.
+ * @param {FormData} formData - The structured data from the intake form.
  * @param {Blob} pdfBlob - The generated PDF file as a Blob.
  * @returns {Promise<void>} - A promise that resolves when the submission is complete.
  */
 export const submitDataToBackend = async (formData: FormData, pdfBlob: Blob): Promise<void> => {
-  // ▼▼▼ YOUR ZAPIER WEBHOOK URL ▼▼▼
-  const webhookUrl = 'https://hooks.zapier.com/hooks/catch/25250318/usm6c1u/';
+  // ▼▼▼ PASTE YOUR ZAPIER WEBHOOK URL HERE ▼▼▼
+  // Example: const webhookUrl = 'https://hooks.zapier.com/hooks/catch/123456/abcdef/';
+  const webhookUrl = 'ZAPIER_WEBHOOK_URL_PLACEHOLDER';
+
+  if (!webhookUrl) {
+    console.warn("No webhook URL provided in utils/backend.ts. Simulating successful submission.");
+    // Simulate a successful submission for local testing if no URL is set
+    return new Promise(resolve => setTimeout(() => {
+        console.log("Simulated backend submission complete.");
+        resolve();
+    }, 1000));
+  }
 
   // Create a FormData object to send both JSON and the PDF file.
   // Zapier automatically parses this format.
@@ -39,7 +49,7 @@ export const submitDataToBackend = async (formData: FormData, pdfBlob: Blob): Pr
   // We can also send individual fields for easier mapping in Zapier if needed.
   submissionData.append('client_name', formData.client.name);
   submissionData.append('client_email', formData.client.email);
-  submissionData.append('client_type', formData.clientType);
+  submissionData.append('client_type', formData.clientType as string);
 
 
   try {
