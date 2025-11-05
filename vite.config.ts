@@ -17,11 +17,14 @@ export default defineConfig({
         description: 'Real Estate Client Intake Form',
         theme_color: '#06b6d4',
         icons: [
+          {
             src: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzA2YjZkNCIgd2lkdGg9IjQwcHgiIGhlaWdodD0iNDBweCI+PHBhdGggZD0iTTEwIDIwdi02aDR2Nmg1di04aDNMMTIgMyAyIDEyaDN2OHoiLz48L3N2Zz4=',
+            sizes: '192x192',
             type: 'image/svg+xml',
+          },
+          {
             src: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iIzA2YjZkNCIgd2lkdGg9IjQwcHgiIGhlaWdodD0iNDBweCI+PHBhdGggZD0iTTEwIDIwdi02aDR2Nmg1di04aDNMMTIgMyAyIDEyaDN2OHoiLz48L3N2Zz4=',
-            type: 'image/svg+xml',,
-      },
-    })
-  ],
-})
+            sizes: '512x512',
+            type: 'image/svg+xml',
+          },
+        ],
