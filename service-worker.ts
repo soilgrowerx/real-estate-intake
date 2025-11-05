@@ -12,7 +12,7 @@
   ];
 
   // Install the service worker and cache the app shell
-  self.addEventListener('install', (event: ExtendableEvent) => {
+  (self as unknown as ServiceWorkerGlobalScope).addEventListener('install', (event) => {
     event.waitUntil(
       caches.open(CACHE_NAME)
         .then((cache) => {
@@ -26,7 +26,7 @@
   });
 
   // Activate the service worker and clean up old caches
-  self.addEventListener('activate', (event: ExtendableEvent) => {
+  (self as unknown as ServiceWorkerGlobalScope).addEventListener('activate', (event) => {
     const cacheWhitelist = [CACHE_NAME];
     event.waitUntil(
       caches.keys().then((cacheNames) => {
@@ -44,7 +44,7 @@
   });
 
   // Intercept fetch requests and serve from cache if available
-  self.addEventListener('fetch', (event: FetchEvent) => {
+  (self as unknown as ServiceWorkerGlobalScope).addEventListener('fetch', (event) => {
     event.respondWith(
       caches.match(event.request)
         .then((response) => {
