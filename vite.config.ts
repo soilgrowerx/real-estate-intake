@@ -9,6 +9,26 @@ export default defineConfig({
   base: '/real-estate-intake/', 
   plugins: [
     react(),
-    VitePWA({ registerType: 'autoUpdate' })
+    VitePWA({
+      registerType: 'autoUpdate',
+      manifest: {
+        name: 'Finnessey Group Intake',
+        short_name: 'FG Intake',
+        description: 'Real Estate Client Intake Form',
+        theme_color: '#06b6d4',
+        icons: [
+          {
+            src: '/logo-black.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: '/logo-black.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
+    })
   ],
 })
