@@ -6,7 +6,7 @@ const Header: React.FC = () => {
       <div className="flex items-center justify-between max-w-4xl mx-auto">
         <div className="flex items-center space-x-4">
           <img
-            src="logo-white.png"
+            src={import.meta.env.BASE_URL + 'logo-white.png'}
             alt="Real Estate AI Intake Logo"
             className="h-10 w-10"
           />
