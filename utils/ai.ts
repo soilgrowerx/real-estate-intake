@@ -12,7 +12,7 @@ import {
     PropertyDocsOptions
 } from '../types';
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY as string });
+const ai = new GoogleGenAI({ apiKey: 'VITE_API_KEY_PLACEHOLDER' as string });
 
 // Defines the expected JSON structure for the AI's response.
 // This complete schema ensures the AI knows about every possible field it can populate.

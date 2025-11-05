@@ -23,6 +23,11 @@ jobs:
         env:
           ZAPIER_WEBHOOK_URL: ${{ secrets.ZAPIER_WEBHOOK_URL }}
 
+      - name: Replace Google API Key
+        run: sed -i "s|VITE_API_KEY_PLACEHOLDER|${{ secrets.VITE_API_KEY }}|g" utils/ai.ts
+        env:
+          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
+
       - name: Install dependencies
         run: npm install
 
