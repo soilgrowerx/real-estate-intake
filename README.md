@@ -64,4 +64,3 @@ In your local project terminal, run the following commands.
 6.  Click **"Save"**.
 
 After a minute or two, your site will be live at the URL you specified in the `homepage` field of your `package.json`!
-
