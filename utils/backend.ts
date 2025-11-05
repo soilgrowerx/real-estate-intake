@@ -35,32 +35,22 @@ export const submitDataToBackend = async (formData: FormData, pdfBlob: Blob): Pr
     }, 1000));
   }
 
-  // Create a FormData object to send both JSON and the PDF file.
-  // Zapier automatically parses this format.
-  const submissionData = new FormData();
-  const clientName = formData.client.name.replace(/ /g, '_') || 'NewClient';
-  const dateStamp = new Date().toISOString().split('T')[0];
-  const pdfFileName = `Intake_${clientName}_${dateStamp}.pdf`;
-
-  // Zapier will receive these as distinct fields you can map in your workflow.
-  submissionData.append('jsonData', JSON.stringify(formData));
-  submissionData.append('pdfFile', pdfBlob, pdfFileName);
-  
-  // We can also send individual fields for easier mapping in Zapier if needed.
-  submissionData.append('client_name', formData.client.name);
-  submissionData.append('client_email', formData.client.email);
-  submissionData.append('client_type', formData.clientType as string);
-
-
   try {
-    await fetch(webhookUrl, {
+    const response = await fetch(webhookUrl, {
       method: 'POST',
-      mode: 'no-cors',
-      body: submissionData,
-      // Note: Do not set 'Content-Type' header. The browser sets it correctly 
-      // for FormData, which is required for file uploads to work.
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
     });
 
+    if (!response.ok) {
+      const errorBody = await response.text();
+      throw new Error(`The automation service responded with ${response.status}: ${errorBody}`);
+    }
+
+    const result = await response.json();
+    console.log('Automation service response:', result);
     return; // Indicates success
 
   } catch (error) {
