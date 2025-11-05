@@ -53,7 +53,7 @@ export const submitDataToBackend = async (formData: FormData, pdfBlob: Blob): Pr
 
 
   try {
-    const response = await fetch(webhookUrl, {
+    await fetch(webhookUrl, {
       method: 'POST',
       mode: 'no-cors',
       body: submissionData,
