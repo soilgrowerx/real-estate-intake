@@ -13,7 +13,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       manifest: {
         name: 'Finnessey Group Intake',
-        short_name: 'FG Intake',
+        short_name: 'FG Intake App',
         description: 'Real Estate Client Intake Form',
         theme_color: '#06b6d4',
         icons: [
