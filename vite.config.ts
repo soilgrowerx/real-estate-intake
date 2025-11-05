@@ -6,7 +6,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 export default defineConfig({
   // IMPORTANT: You must replace `<YOUR_REPO_NAME>` with the name of your GitHub repository
   // for deployment to GitHub Pages to work correctly.
-  base: './', 
+
   plugins: [
     react(),
     VitePWA({
@@ -17,14 +17,5 @@ export default defineConfig({
         description: 'Real Estate Client Intake Form',
         theme_color: '#06b6d4',
         icons: [
-          {
-            src: 'logo-black.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: 'logo-black.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-        ],
+            src: '/logo-black.png',
+            src: '/logo-black.png',,
