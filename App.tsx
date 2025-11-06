@@ -265,7 +265,7 @@ const App: React.FC = () => {
       await submitDataToBackend(formData);
       
       setSubmitStatus('Submission successful!');
-      alert('Form submitted successfully! The data has been sent to Google Sheets, emailed, and a PDF was saved to Google Drive.');
+      alert('Form submitted successfully! The data has been sent to Google Sheets and emailed.');
       setFormData(initialState); 
 
     } catch (error) {
