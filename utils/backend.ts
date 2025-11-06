@@ -35,22 +35,28 @@ export const submitDataToBackend = async (formData: FormData): Promise<void> => 
     }, 1000));
   }
 
+  // Create a FormData object to send the JSON data.
+  // Zapier automatically parses this format.
+  const submissionData = new FormData();
+
+  // Zapier will receive these as distinct fields you can map in your workflow.
+  submissionData.append('jsonData', JSON.stringify(formData));
+  
+  // We can also send individual fields for easier mapping in Zapier if needed.
+  submissionData.append('client_name', formData.client.name);
+  submissionData.append('client_email', formData.client.email);
+  submissionData.append('client_type', formData.clientType as string);
+
+
   try {
-    const response = await fetch(webhookUrl, {
+    await fetch(webhookUrl, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
+      mode: 'no-cors',
+      body: submissionData,
+      // Note: Do not set 'Content-Type' header. The browser sets it correctly 
+      // for FormData, which is required for file uploads to work.
     });
 
-    if (!response.ok) {
-      const errorBody = await response.text();
-      throw new Error(`The automation service responded with ${response.status}: ${errorBody}`);
-    }
-
-    const result = await response.json();
-    console.log('Automation service response:', result);
     return; // Indicates success
 
   } catch (error) {
