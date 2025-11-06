@@ -8,7 +8,6 @@ import FormTextArea from './components/FormTextArea';
 import FloatingMicButton from './components/FloatingMicButton';
 import StatusBar from './components/StatusBar';
 import { processTranscriptWithAI } from './utils/ai';
-import { generateIntakePDF } from './utils/pdfGenerator';
 import { submitDataToBackend } from './utils/backend';
 import {
   FormData,
@@ -262,11 +261,8 @@ const App: React.FC = () => {
     setError(null);
 
     try {
-      setSubmitStatus('Generating PDF...');
-      const pdfBlob = await generateIntakePDF(formData);
-
       setSubmitStatus('Sending data to services...');
-      await submitDataToBackend(formData, pdfBlob);
+      await submitDataToBackend(formData);
       
       setSubmitStatus('Submission successful!');
       alert('Form submitted successfully! The data has been sent to Google Sheets, emailed, and a PDF was saved to Google Drive.');
