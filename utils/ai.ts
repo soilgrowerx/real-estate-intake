@@ -92,7 +92,7 @@ const responseSchema = {
 export const processTranscriptWithAI = async (transcript: string): Promise<Partial<FormData>> => {
     try {
         const response = await ai.models.generateContent({
-            model: 'gemini-2.5-pro',
+            model: 'gemma-3n-4b',
             contents: `You are a flawless, expert real estate assistant AI. Your goal is to listen to a conversation with a client and fill out an intake form with perfect accuracy. Below is a transcript of the conversation so far. Analyze the ENTIRE transcript and extract every possible piece of information that fits into the provided JSON schema. Be meticulous. Map conversational phrases to the correct schema values (e.g., 'sometime in the next month' should be '< 30 Days'). Pay close attention to the 'clientType'. If the client is 'Both' a seller and a buyer, be sure to extract and populate fields in *both* the 'sellerInfo' and 'buyerInfo' objects from the conversation. Do not miss any details. If a piece of information is mentioned, you must capture it. Do not invent information. Omit fields that are not mentioned.\n\nTranscript:\n${transcript}`,
             config: {
                 responseMimeType: "application/json",
