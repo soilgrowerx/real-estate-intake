@@ -10,7 +10,7 @@ import { IndexeddbPersistence } from 'y-indexeddb';
 export interface SporeBlock {
     id: string;
     content: string;
-    type: 'voice' | 'text';
+    type: 'voice' | 'text' | 'file';
     nodeType: 'spore' | 'sticky' | 'shape';
     tags: string[];
     createdAt: number;
