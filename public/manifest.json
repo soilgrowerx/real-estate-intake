@@ -1,0 +1,31 @@
+{
+    "name": "Neocambrian Spore Garden",
+    "short_name": "Spore Garden",
+    "description": "Capture spores, grow ideas, and cultivate your Neocambrian Garden.",
+    "start_url": "/?mode=capture",
+    "display": "fullscreen",
+    "background_color": "#0f172a",
+    "theme_color": "#0f172a",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/spore_logo_v3.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/spore_logo_v3.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "share_target": {
+        "action": "/?mode=capture",
+        "method": "GET",
+        "params": {
+            "title": "title",
+            "text": "text",
+            "url": "url"
+        }
+    }
+}
