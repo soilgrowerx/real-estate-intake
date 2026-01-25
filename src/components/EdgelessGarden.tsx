@@ -448,6 +448,8 @@ function GardenContent() {
                 onDragOver={onDragOver}
                 nodeTypes={nodeTypes}
                 fitView
+                minZoom={0.05}
+                maxZoom={100}
             >
                 <Background color="#cbd5e1" gap={30} size={1} />
                 <Controls className="!bg-white !border-slate-100 !shadow-xl !rounded-2xl" />

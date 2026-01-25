@@ -70,21 +70,29 @@ export default function HarvestPanel({ onHarvest }: { onHarvest?: (item: Spore) 
     return (
         <div className="fixed left-0 top-[20%] z-[999] flex items-center h-fit">
             {/* Toggle Tab */}
-            <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="bg-indigo-600 text-white p-4 rounded-r-3xl shadow-[10px_0_40px_rgba(79,70,229,0.4)] hover:bg-indigo-700 transition-all flex flex-col items-center gap-3 border-y border-r border-indigo-500 group"
-                style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
-            >
-                <div className={`transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}>
-                    <svg className="w-6 h-6 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" /></svg>
-                </div>
-                <span className="text-xs font-black tracking-[0.2em] uppercase py-2 drop-shadow-md">HARVEST INSIGHTS</span>
-                {items.length > 0 && (
-                    <span className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center text-[10px] font-black -rotate-90">
-                        {items.length}
-                    </span>
+            {/* Toggle Tab - hidden when open */}
+            <AnimatePresence>
+                {!isOpen && (
+                    <motion.button
+                        initial={{ x: -100, opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        exit={{ x: -100, opacity: 0 }}
+                        onClick={() => setIsOpen(true)}
+                        className="fixed left-0 top-[20%] z-[999] bg-indigo-600 text-white p-4 rounded-r-3xl shadow-[10px_0_40px_rgba(79,70,229,0.4)] hover:bg-indigo-700 transition-all flex flex-col items-center gap-3 border-y border-r border-indigo-500 group"
+                        style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
+                    >
+                        <div className="transition-transform duration-300">
+                            <svg className="w-6 h-6 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" /></svg>
+                        </div>
+                        <span className="text-xs font-black tracking-[0.2em] uppercase py-2 drop-shadow-md">HARVEST INSIGHTS</span>
+                        {items.length > 0 && (
+                            <span className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center text-[10px] font-black -rotate-90">
+                                {items.length}
+                            </span>
+                        )}
+                    </motion.button>
                 )}
-            </button>
+            </AnimatePresence>
 
             <AnimatePresence>
                 {isOpen && (
@@ -92,12 +100,20 @@ export default function HarvestPanel({ onHarvest }: { onHarvest?: (item: Spore) 
                         initial={{ x: -350 }}
                         animate={{ x: 0 }}
                         exit={{ x: -350 }}
-                        className="w-[85vw] md:w-[350px] bg-white/90 backdrop-blur-2xl h-[70vh] rounded-r-3xl border-y border-r border-slate-200 shadow-2xl overflow-hidden flex flex-col"
+                        className="fixed left-0 top-[20%] z-[1000] w-[90vw] md:w-[350px] bg-white/90 backdrop-blur-2xl h-[70vh] rounded-r-3xl border-y border-r border-slate-200 shadow-2xl overflow-hidden flex flex-col"
                     >
                         <header className="p-6 border-b border-slate-100 flex justify-between items-center bg-indigo-50/30">
-                            <div>
-                                <h3 className="text-sm font-black text-slate-800 tracking-tighter">EXTERNAL HARVEST</h3>
-                                <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mt-1">Ready to Myceliate</p>
+                            <div className="flex items-center gap-3">
+                                <button
+                                    onClick={() => setIsOpen(false)}
+                                    className="p-2 bg-white rounded-full text-indigo-600 shadow-sm hover:shadow-md transition-all"
+                                >
+                                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" /></svg>
+                                </button>
+                                <div>
+                                    <h3 className="text-sm font-black text-slate-800 tracking-tighter">EXTERNAL HARVEST</h3>
+                                    <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mt-1">Ready to Myceliate</p>
+                                </div>
                             </div>
                             <button
                                 onClick={() => setFilterSilo(!filterSilo)}
