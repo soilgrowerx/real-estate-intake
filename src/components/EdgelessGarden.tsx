@@ -69,8 +69,8 @@ const SporeNode = ({ data, selected }: { data: SporeBlock & { highlighted?: bool
                     animate={{ opacity: 1, scale: 1 }}
                 />
             )}
-            <Handle type="target" position={Position.Left} className="!w-4 !h-4 !bg-teal-500 !border-2 !border-white !opacity-0 group-hover:!opacity-100 transition-opacity" />
-            <Handle type="source" position={Position.Right} className="!w-4 !h-4 !bg-teal-500 !border-2 !border-white !opacity-0 group-hover:!opacity-100 transition-opacity" />
+            <Handle type="target" position={Position.Left} className={`!w-4 !h-4 !bg-teal-500 !border-2 !border-white transition-opacity ${selected ? '!opacity-100' : '!opacity-0 group-hover:!opacity-100'}`} />
+            <Handle type="source" position={Position.Right} className={`!w-4 !h-4 !bg-teal-500 !border-2 !border-white transition-opacity ${selected ? '!opacity-100' : '!opacity-0 group-hover:!opacity-100'}`} />
 
             <div className="flex justify-between items-start mb-3">
                 <div className="flex gap-2 items-center">
@@ -105,7 +105,7 @@ const SporeNode = ({ data, selected }: { data: SporeBlock & { highlighted?: bool
 
             <div className="flex justify-between items-center mt-auto">
                 <span className={`text-[9px] font-bold uppercase ${isDark ? 'text-white/40' : 'text-slate-400'}`}>{new Date(data.createdAt).toLocaleDateString()}</span>
-                <div className="flex gap-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className={`flex gap-3 transition-opacity ${selected ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
                     <button onClick={() => data.onSpawn(data.id)} className="p-2 bg-teal-500 text-white rounded-full hover:bg-teal-600 transition-colors shadow-lg" title="Spawn from this">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M12 4v16m8-8H4" /></svg>
                     </button>
@@ -147,13 +147,13 @@ const StickyNode = ({ data, selected }: { data: SporeBlock & { onEdit: (id: stri
                 >
                     {data.content}
                 </p>
-                <div className="absolute top-2 right-2 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className={`absolute top-2 right-2 flex gap-1 transition-opacity ${selected ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}>
                     <button onClick={() => data.onEdit(data.id, data.content)} className="p-1.5 bg-white/50 rounded-full hover:bg-white transition-colors">
                         <svg className="w-3 h-3 text-slate-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
                     </button>
                 </div>
-                <Handle type="target" position={Position.Left} className="!w-3 !h-3 !bg-teal-500 !border-2 !border-white !opacity-0 group-hover:!opacity-100 transition-opacity" />
-                <Handle type="source" position={Position.Right} className="!w-3 !h-3 !bg-teal-500 !border-2 !border-white !opacity-0 group-hover:!opacity-100 transition-opacity" />
+                <Handle type="target" position={Position.Left} className={`!w-3 !h-3 !bg-teal-500 !border-2 !border-white transition-opacity ${selected ? '!opacity-100' : '!opacity-0 group-hover:!opacity-100'}`} />
+                <Handle type="source" position={Position.Right} className={`!w-3 !h-3 !bg-teal-500 !border-2 !border-white transition-opacity ${selected ? '!opacity-100' : '!opacity-0 group-hover:!opacity-100'}`} />
             </div>
         </>
     );
@@ -182,7 +182,7 @@ const ShapeNode = ({ data, selected }: { data: SporeBlock & { onDelete: (id: str
                 </div>
                 <button
                     onClick={() => data.onDelete(data.id)}
-                    className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 p-2 text-slate-400 hover:text-red-500 transition-all font-black text-sm"
+                    className={`absolute top-4 right-4 p-2 text-slate-400 hover:text-red-500 transition-all font-black text-sm ${selected ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'}`}
                 >
                     ✕
                 </button>

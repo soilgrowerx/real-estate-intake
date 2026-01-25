@@ -92,7 +92,7 @@ export default function HarvestPanel({ onHarvest }: { onHarvest?: (item: Spore) 
                         initial={{ x: -350 }}
                         animate={{ x: 0 }}
                         exit={{ x: -350 }}
-                        className="w-[350px] bg-white/90 backdrop-blur-2xl h-[70vh] rounded-r-3xl border-y border-r border-slate-200 shadow-2xl overflow-hidden flex flex-col"
+                        className="w-[85vw] md:w-[350px] bg-white/90 backdrop-blur-2xl h-[70vh] rounded-r-3xl border-y border-r border-slate-200 shadow-2xl overflow-hidden flex flex-col"
                     >
                         <header className="p-6 border-b border-slate-100 flex justify-between items-center bg-indigo-50/30">
                             <div>
