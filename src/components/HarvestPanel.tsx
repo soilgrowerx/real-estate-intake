@@ -78,15 +78,15 @@ export default function HarvestPanel({ onHarvest }: { onHarvest?: (item: Spore) 
                         animate={{ x: 0, opacity: 1 }}
                         exit={{ x: -100, opacity: 0 }}
                         onClick={() => setIsOpen(true)}
-                        className="fixed left-0 top-[20%] z-[999] bg-indigo-600 text-white p-4 rounded-r-3xl shadow-[10px_0_40px_rgba(79,70,229,0.4)] hover:bg-indigo-700 transition-all flex flex-col items-center gap-3 border-y border-r border-indigo-500 group"
+                        className="fixed left-0 top-[20%] z-[999] bg-teal-600 text-white p-2 rounded-r-2xl shadow-[10px_0_40px_rgba(20,184,166,0.4)] hover:bg-teal-700 transition-all flex flex-col items-center gap-2 border-y border-r border-teal-500 group"
                         style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
                     >
                         <div className="transition-transform duration-300">
-                            <svg className="w-6 h-6 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" /></svg>
+                            <svg className="w-5 h-5 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M19 9l-7 7-7-7" /></svg>
                         </div>
-                        <span className="text-xs font-black tracking-[0.2em] uppercase py-2 drop-shadow-md">HARVEST INSIGHTS</span>
+                        <span className="text-[10px] font-black tracking-[0.2em] uppercase py-2 drop-shadow-md">HARVEST INSIGHTS</span>
                         {items.length > 0 && (
-                            <span className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center text-[10px] font-black -rotate-90">
+                            <span className="w-5 h-5 bg-teal-800 rounded-full flex items-center justify-center text-[9px] font-black -rotate-90 text-teal-100">
                                 {items.length}
                             </span>
                         )}

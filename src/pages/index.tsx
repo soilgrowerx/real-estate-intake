@@ -148,7 +148,7 @@ export default function Home() {
               <button onClick={() => setViewMode('CAPTURE')} className="px-6 py-2 bg-teal-600 text-white text-xs font-bold rounded-full hover:bg-teal-500 transition-all shadow-lg shadow-teal-900/20">
                 ↙ CAPTURE SPORES
               </button>
-              <button onClick={() => setViewMode('EDGELESS')} className="px-6 py-2 bg-indigo-600 text-white text-xs font-bold rounded-full hover:bg-indigo-500 transition-all shadow-lg shadow-indigo-900/20">
+              <button onClick={() => setViewMode('EDGELESS')} className="px-6 py-2 bg-teal-700 text-white text-xs font-bold rounded-full hover:bg-teal-600 transition-all shadow-lg shadow-teal-900/20">
                 🕸 EDGELESS GARDEN
               </button>
             </div>
