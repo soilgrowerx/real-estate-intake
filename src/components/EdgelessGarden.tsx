@@ -15,6 +15,7 @@ import {
     MarkerType,
     useOnSelectionChange,
     ReactFlowProvider,
+    SelectionMode,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import { sovereignStore, SporeBlock } from '../lib/sovereign-store';
@@ -204,6 +205,8 @@ const COLORS = [
     { name: 'Teal', value: '#f0fdfa' },
     { name: 'Yellow', value: '#fef9c3' },
     { name: 'Rose', value: '#fff1f2' },
+    { name: 'Orange', value: '#ffedd5' },
+    { name: 'Purple', value: '#f3e8ff' },
     { name: 'Obsidian', value: '#0f172a' },
     { name: 'Midnight', value: '#1e1b4b' },
     { name: 'Emerald', value: '#064e3b' },
@@ -446,6 +449,9 @@ function GardenContent() {
                 onNodeDragStop={onNodeDragStop}
                 onDrop={onDrop}
                 onDragOver={onDragOver}
+                selectionOnDrag={true}
+                panOnDrag={[1, 2]}
+                selectionMode={SelectionMode.Partial}
                 nodeTypes={nodeTypes}
                 fitView
                 minZoom={0.05}

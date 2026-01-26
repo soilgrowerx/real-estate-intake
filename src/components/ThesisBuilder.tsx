@@ -15,38 +15,35 @@ export default function ThesisBuilder({ isOpen, onClose, selectedSpores }: Thesi
         setIsSynthesizing(true);
         setThesis('');
 
-        // Simulate thinking time
-        await new Promise(r => setTimeout(r, 2000));
+        try {
+            const response = await fetch('/api/synthesis', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ spores: selectedSpores }),
+            });
 
-        const timestamp = new Date().toISOString();
-        const tags = Array.from(new Set(selectedSpores.flatMap(s => s.tags)));
+            const data = await response.json();
 
-        const output = `
-# NEOCAMBRIAN THESIS: [SYNTHESIS-${timestamp.substring(0, 10)}]
-## SOURCE MATERIAL: ${selectedSpores.length} SPORES
-## TAG CLOUD: ${tags.join(', ')}
+            if (!response.ok) {
+                throw new Error(data.message || 'Synthesis failed');
+            }
+
+            setThesis(data.thesis);
+        } catch (error) {
+            console.error(error);
+            setThesis(`
+# [SYSTEM ERROR]
+## CONNECTION SEVERED which means you are OFFLINE or the ARBORACLE IS UNREACHABLE
+
+The Arboracle could not reach the Mycelial Network. 
+Please ensure you have internet access and valid credentials.
 
 ---
-
-### [IDENTITY MATRIX]
-Derived from the Crystalline Structure of selected memories.
-
-### [THE SYNTHESIS]
-Based on the provided substrate, the Arboracle infers the following emergent pattern:
-
-${selectedSpores.map(s => `> *"${s.content}"*`).join('\n\n')}
-
-### [CLIMAX INSIGHTS]
-1. **Convergence**: These fragments suggest a recurring focus on **${tags[0] || 'emergent themes'}**.
-2. **Syntropy**: By connecting these nodes, we reduce cognitive entropy by **${Math.floor(Math.random() * 40) + 40}%**.
-3. **Actionable Vector**: Move from static storage to dynamic mycelial routing.
-
-### [PROTOCOL ADHERENCE]
-Verified v3.4 [STIM-ACTIVE]
-        `.trim();
-
-        setThesis(output);
-        setIsSynthesizing(false);
+*Error Details: ${(error as Error).message}*
+            `.trim());
+        } finally {
+            setIsSynthesizing(false);
+        }
     };
 
     useEffect(() => {
