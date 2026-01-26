@@ -1,5 +1,6 @@
 import * as Y from 'yjs';
 import { IndexeddbPersistence } from 'y-indexeddb';
+import { WebrtcProvider } from 'y-webrtc';
 
 /**
  * SovereignStore: The CRDT-backed data layer for the Edgeless Garden.
@@ -30,15 +31,30 @@ export interface SporeBlock {
 class SovereignStore {
     public doc: Y.Doc;
     private persistence: IndexeddbPersistence;
+    private webrtc: WebrtcProvider;
     private sporesMap: Y.Map<any>;
 
     constructor() {
         this.doc = new Y.Doc();
+
+        // 1. Local Persistence (Offline First)
         this.persistence = new IndexeddbPersistence('sovereign-garden-db', this.doc);
+
+        // 2. P2P Sync (The Body)
+        // Uses public signaling servers by default. Room name makes it unique.
+        // In production, we'd use a password-protected room or custom signaling server.
+        this.webrtc = new WebrtcProvider('neocambrian-garden-v1', this.doc, {
+            signaling: ['wss://signaling.yjs.dev', 'wss://y-webrtc-signaling-eu.herokuapp.com', 'wss://y-webrtc-signaling-us.herokuapp.com']
+        });
+
         this.sporesMap = this.doc.getMap('spores');
 
         this.persistence.on('synced', () => {
             console.log('[SOVEREIGN] Garden synced with local substrate.');
+        });
+
+        this.webrtc.on('status', (event: any) => {
+            console.log('[SOVEREIGN] P2P Status:', event.status);
         });
     }
 
@@ -112,6 +128,12 @@ class SovereignStore {
         this.doc.transact(() => {
             this.sporesMap.delete(id);
         });
+    }
+    /**
+     * Exposes the awareness instance for presence (cursors, peer counts).
+     */
+    getAwareness() {
+        return this.webrtc.awareness;
     }
 }
 

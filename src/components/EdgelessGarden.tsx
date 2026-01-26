@@ -231,6 +231,24 @@ function GardenContent() {
     const [selectedColor, setSelectedColor] = useState<string | undefined>(undefined);
     const [isThesisOpen, setIsThesisOpen] = useState(false);
     const [highlightedIds, setHighlightedIds] = useState<Set<string>>(new Set());
+    const [peerCount, setPeerCount] = useState(0);
+
+    useEffect(() => {
+        const awareness = sovereignStore.getAwareness();
+
+        const updatePeers = () => {
+            // Self is included in states, so size - 1 is the number of *other* peers
+            const count = awareness.getStates().size - 1;
+            setPeerCount(Math.max(0, count));
+        };
+
+        awareness.on('change', updatePeers);
+        updatePeers();
+
+        return () => {
+            awareness.off('change', updatePeers);
+        };
+    }, []);
 
     useOnSelectionChange({
         onChange: ({ nodes: selectedNodes }) => {
@@ -465,7 +483,15 @@ function GardenContent() {
                         <img src="/spore_logo_v3.png" alt="Logo" className="w-8 h-8" />
                         <div>
                             <h2 className="text-sm font-black text-slate-800 leading-none">EDGELESS GARDEN</h2>
-                            <p className="text-[10px] font-bold text-slate-400 tracking-widest uppercase mt-1">Sovereign Substrate v1.0</p>
+                            <div className="flex items-center gap-2 mt-1">
+                                <p className="text-[10px] font-bold text-slate-400 tracking-widest uppercase">Sovereign Substrate v1.0</p>
+                                {peerCount > 0 && (
+                                    <div className="flex items-center gap-1 bg-teal-50 px-2 py-0.5 rounded-full border border-teal-100">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse" />
+                                        <span className="text-[9px] font-bold text-teal-600 uppercase tracking-tight">{peerCount} PEER{peerCount !== 1 ? 'S' : ''}</span>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </Panel>
