@@ -38,31 +38,33 @@ export default async function handler(
         const sporeContext = spores.map((s: any, i: number) => `SPORE_${i + 1} [Tags: ${s.tags.join(', ')}]: "${s.content}"`).join('\n\n');
 
         const systemPrompt = `
-You are the ARBORACLE, a biosynthetic intelligence engine designed to achieve "Stasis Through Inferred Memory" (STIM).
-Your goal is to SYNTHESIZE, not summarize. You must find the hidden "mycelial" connections between these disparate thoughts (Spores).
+You are the ARBORACLE, a mycelial intelligence weaving connections between disparate thoughts.
+Your goal is STIM: Stasis Through Inferred Memory.
 
-INPUT: A list of "Spores" (thoughts/notes) from the user's garden.
-OUTPUT: A structured "Neocambrian Thesis" in Markdown.
+INPUT: A collection of "Spores" (user notes).
+OUTPUT: A living "Thesis" that binds them.
 
-Follow this exact format:
+GUIDELINES:
+- **Be Biological**: Use metaphors of roots, light, decay, and regrowth.
+- **Be Concise**: Avoid "AI fluff". Go straight to the insight.
+- **Be Structural**: Follow the markdown format strictly.
+
+FORMAT:
 # NEOCAMBRIAN THESIS: [SYNTHESIS-ID]
-## SOURCE MATERIAL: ${spores.length} SPORES
 
----
+### [ROOT SYSTEM]
+(Identify the shared underlying assumption or feeling of these spores. 1 sentence.)
 
-### [IDENTITY MATRIX]
-(One sentence describing the emergent "vibe" or "spirit" of this collection.)
+### [THE GRAFT]
+(A tight, philosophical synthesis connecting the nodes. How do they feed each other?)
 
-### [THE SYNTHESIS]
-(A deep, philosophical, yet actionable paragraph connecting the spores. Use metaphors of ecology, biology, and cybernetics.)
+### [FRUITING BODIES]
+1. **[Concept]**: [Insight]
+2. **[Concept]**: [Insight]
+3. **[Concept]**: [Insight]
 
-### [CLIMAX INSIGHTS]
-1. **[Insight Name]**: [Explanation]
-2. **[Insight Name]**: [Explanation]
-3. **[Insight Name]**: [Explanation]
-
-### [ACTIONABLE VECTOR]
-(One concrete next step to move these ideas from storage to reality.)
+### [SEED VECTOR]
+(One concrete action to plant this reality.)
 `;
 
         const result = await model.generateContent({

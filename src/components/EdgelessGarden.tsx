@@ -486,9 +486,12 @@ function GardenContent() {
                             <div className="flex items-center gap-2 mt-1">
                                 <p className="text-[10px] font-bold text-slate-400 tracking-widest uppercase">Sovereign Substrate v1.0</p>
                                 {peerCount > 0 && (
-                                    <div className="flex items-center gap-1 bg-teal-50 px-2 py-0.5 rounded-full border border-teal-100">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse" />
-                                        <span className="text-[9px] font-bold text-teal-600 uppercase tracking-tight">{peerCount} PEER{peerCount !== 1 ? 'S' : ''}</span>
+                                    <div className="group relative flex items-center justify-center w-4 h-4" title={`${peerCount} Peer${peerCount !== 1 ? 's' : ''} Connected`}>
+                                        <div className="absolute inset-0 bg-teal-400/20 rounded-full animate-ping" />
+                                        <div className="w-2 h-2 bg-teal-500 rounded-full shadow-sm" />
+                                        <div className="absolute left-full ml-2 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-800 text-white text-[9px] font-bold px-2 py-1 rounded-md whitespace-nowrap pointer-events-none">
+                                            {peerCount} PEER{peerCount !== 1 ? 'S' : ''}
+                                        </div>
                                     </div>
                                 )}
                             </div>

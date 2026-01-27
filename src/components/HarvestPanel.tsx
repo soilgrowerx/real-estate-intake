@@ -26,12 +26,22 @@ export default function HarvestPanel({ onHarvest }: { onHarvest?: (item: Spore) 
     const [isOpen, setIsOpen] = useState(false);
     const [items, setItems] = useState<Spore[]>([]);
     const [filterSilo, setFilterSilo] = useState(false);
+    const [hasNewItems, setHasNewItems] = useState(false);
+
+    useEffect(() => {
+        if (items.length > 0) {
+            setHasNewItems(true);
+            const timer = setTimeout(() => setHasNewItems(false), 2000);
+            return () => clearTimeout(timer);
+        }
+    }, [items.length]);
 
     useEffect(() => {
         const loadItems = async () => {
             const allItems = await sporeStore.getAll();
             setItems(allItems);
         };
+
 
         loadItems();
         // Initial scavenge from server silo

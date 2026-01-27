@@ -52,6 +52,22 @@ Please ensure you have internet access and valid credentials.
         }
     }, [isOpen]);
 
+    // Simple markdown parser for bolding and headers
+    const renderMarkdown = (text: string) => {
+        return text.split('\n').map((line, i) => {
+            if (line.startsWith('# ')) return <h1 key={i} className="text-2xl font-black text-teal-900 mt-4 mb-2">{line.replace('# ', '')}</h1>;
+            if (line.startsWith('### ')) return <h3 key={i} className="text-sm font-bold text-teal-600 uppercase tracking-widest mt-6 mb-1">{line.replace('### ', '')}</h3>;
+            if (line.startsWith('1. ') || line.startsWith('2. ') || line.startsWith('3. ')) {
+                const parts = line.split('**:');
+                if (parts.length === 2) {
+                    return <li key={i} className="ml-4 list-none text-slate-700 mb-1"><strong className="text-teal-700">{parts[0].replace(/\d\. \*\*/, '')}</strong>: {parts[1]}</li>;
+                }
+                return <p key={i} className="ml-4 text-slate-700">{line}</p>;
+            }
+            return <p key={i} className="text-slate-600 leading-relaxed mb-2">{line}</p>;
+        });
+    };
+
     return (
         <AnimatePresence>
             {isOpen && (
@@ -59,11 +75,11 @@ Please ensure you have internet access and valid credentials.
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="fixed inset-0 z-[200] flex items-center justify-center bg-slate-900/80 backdrop-blur-lg p-6"
+                    className="fixed inset-0 z-[200] flex items-center justify-center bg-slate-900/80 backdrop-blur-md p-4"
                     onClick={onClose}
                 >
                     <motion.div
-                        initial={{ scale: 0.9, y: 50 }}
+                        initial={{ scale: 0.95, y: 20 }}
                         animate={{ scale: 1, y: 0 }}
                         exit={{ scale: 0.9, y: 50 }}
                         className="bg-white rounded-[40px] shadow-2xl max-w-2xl w-full h-[80vh] flex flex-col overflow-hidden border border-white/20"
