@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "001_PROJECTS/STIM/STIM_v7_Project_Files/STIM_LAUNCH_GUIDE.md",
+                "file": "001_PROJECTS/STIM/STIM_v7_Project_Files/STIM_DOMAIN_ARCHITECTURE.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -100,7 +100,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "STIM_LAUNCH_GUIDE"
+              "title": "STIM_DOMAIN_ARCHITECTURE"
             }
           }
         ],
@@ -177,7 +177,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "001_PROJECTS/STIM/STIM_v7_Project_Files/STIM_LAUNCH_GUIDE.md",
+                "file": "001_PROJECTS/STIM/STIM_v7_Project_Files/STIM_DOMAIN_ARCHITECTURE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for STIM_LAUNCH_GUIDE"
+              "title": "Backlinks for STIM_DOMAIN_ARCHITECTURE"
             }
           },
           {
@@ -257,8 +257,11 @@
       "obsidian-livesync:Show Customization sync": false
     }
   },
-  "active": "1f0c7910c1773551",
+  "active": "33fa68205593f73d",
   "lastOpenFiles": [
+    "001_PROJECTS/STIM/STIM_v7_Project_Files/STIM_GEMINI_EXPANDED_RESEARCH.md",
+    "005_JOURNAL/Daily/2026-03-30.md",
+    "001_PROJECTS/STIM/STIM_v7_Project_Files/STIM_LAUNCH_GUIDE.md",
     "001_PROJECTS/STIM/Submission_Prep/MACKENZE_OUTREACH.md",
     "007_SYSTEM/Memory_Backups/INDEX_BACKUP.md",
     "007_SYSTEM/Memory_Backups/lessons_learned.md",
@@ -285,9 +288,6 @@
     "001_PROJECTS/STIM/STIM_v7_Project_Files/STIM_White_Paper_v7.0001.md",
     "001_PROJECTS/STIM/STIM_v7_Project_Files/STIM_White_Paper_v6.md",
     "001_PROJECTS/STIM/STIM_v7_Project_Files/STIM_White_Paper_v5.md",
-    "001_PROJECTS/STIM/STIM_v7_Project_Files/STIM_White_Paper_v4.md",
-    "001_PROJECTS/STIM/STIM_v7_Project_Files/STIM_White_Paper_v3.md",
-    "001_PROJECTS/STIM/STIM_v7_Project_Files/STIM_White_Paper_v2.md",
     "001_PROJECTS/STIM/STIM_v7_Project_Files/core/uv.lock",
     "001_PROJECTS/STIM/STIM_v7_Project_Files/core/train.py",
     "001_PROJECTS/STIM/STIM_v7_Project_Files/core/pyproject.toml",
