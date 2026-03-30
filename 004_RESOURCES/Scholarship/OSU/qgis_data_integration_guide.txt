@@ -1,0 +1,49 @@
+This guide provides instructions for connecting QGIS to key data sources for ecological and environmental analysis.
+
+### 1. The USGS National Map: Your Foundation
+This is one of the most important sources for US-based data, including elevation, hydrography, and boundaries. We'll connect to it as a Web Map Service (WMS).
+
+**Instructions:**
+1.  In QGIS, go to the **Browser Panel** (usually on the left).
+2.  Right-click on **WMS/WMTS** and select **New Connection...**.
+3.  Fill in the details like this:
+    *   **Name:** `USGS National Map`
+    *   **URL:** `https://services.nationalmap.gov/arcgis/services/TNM_Vector_Services/MapServer/WMSServer`
+4.  Click **OK**.
+
+After connecting, you can expand the `USGS National Map` entry in your Browser Panel to see dozens of layers you can drag and drop into your map.
+
+### 2. Oregon GEOHub (formerly Spatial Data Library)
+This is a critical resource for high-resolution, state-specific data for your work at Oregon State.
+
+**Instructions to add a dataset (e.g., Statewide Land Cover):**
+1.  Go to the Oregon GEOHub website: https://geohub.oregon.gov/
+2.  Use the search bar to find a dataset you need (e.g., `land cover`).
+3.  On the dataset's page, find the API or Services link and copy the **WMS** or **ArcGIS REST Service** URL.
+4.  Back in QGIS, open the WMS/WMTS connection dialog again and create a new connection (e.g., `Oregon GEOHub - Land Cover`) using the URL you copied.
+5.  Repeat this process for other essential datasets like hydrography, administrative boundaries, etc.
+
+### 3. Global Satellite & Aerial Imagery
+
+**A. Quick Basemaps (via QuickMapServices Plugin):**
+*   For high-resolution visual context, use the layers provided by the **QuickMapServices** plugin.
+*   Access them from the menu: `Web` > `QuickMapServices`. Selections like Google Satellite or Google Hybrid are excellent starting points.
+
+**B. Sentinel-2 Scientific Imagery (via SCP Plugin):**
+*   For multispectral analysis, Sentinel-2 data is crucial. The **Semi-Automatic Classification Plugin (SCP)** is the best way to access it.
+*   **Instructions:**
+    1.  In QGIS, open the SCP dock: `SCP` > `SCP dock`.
+    2.  Go to the **Download products** tab.
+    3.  Enter your login credentials for the Copernicus Open Access Hub (registration is free on their website).
+    4.  Use the map to define your area of interest, search for recent images, and download the required bands directly into your project.
+
+### 4. Key Data Download Portals
+For offline use and more intensive analysis, download raw data from these portals.
+
+*   **USGS EarthExplorer (earthexplorer.usgs.gov):**
+    *   **Primary Use:** Downloading Landsat satellite imagery, Digital Elevation Models (DEMs), and high-resolution aerial photography.
+    *   **Workflow:** Define your area of interest, select the dataset, filter by date or cloud cover, and download the files to your computer.
+
+*   **Natural Earth Data (naturalearthdata.com):**
+    *   **Primary Use:** Global, medium-resolution (1:10m, 1:50m, 1:110m scale) cultural and physical vector data.
+    *   **Best For:** Creating clean, simple base maps for regional or global analysis where high precision is not required.

@@ -1,0 +1,56 @@
+{
+  "id": "db409d77-ed30-474d-9be1-ecc1105ba14e",
+  "title": "summarize this file",
+  "messages": [
+    {
+      "role": "user",
+      "content": {
+        "root": {
+          "children": [
+            {
+              "children": [
+                {
+                  "detail": 0,
+                  "format": 0,
+                  "mode": "normal",
+                  "style": "",
+                  "text": "summarize this file",
+                  "type": "text",
+                  "version": 1
+                }
+              ],
+              "direction": "ltr",
+              "format": "",
+              "indent": 0,
+              "type": "paragraph",
+              "version": 1,
+              "textFormat": 0,
+              "textStyle": ""
+            }
+          ],
+          "direction": "ltr",
+          "format": "",
+          "indent": 0,
+          "type": "root",
+          "version": 1
+        }
+      },
+      "promptContent": [
+        {
+          "type": "text",
+          "text": "\n\nsummarize this file\n\n"
+        }
+      ],
+      "id": "3acc7193-fb5d-4cbc-b846-762c573f11af",
+      "mentionables": [
+        {
+          "type": "current-file",
+          "file": "003_RESOURCES/31_Ecology_and_Regeneration/Fire Ecology/Economics, Sustainability, and Natural Resources.pdf"
+        }
+      ]
+    }
+  ],
+  "createdAt": 1752382666755,
+  "updatedAt": 1752382959840,
+  "schemaVersion": 1
+}

@@ -1,0 +1,56 @@
+Great job. I am very pleased with how you have developed this. My one substantial suggestion is to consider adding a section on the physiology / mechanisms of tree mortality from hotter drought (in Central Texas, if you can find the litearture). I think this is important context for the reader to fully understand / appreciate your proposed solutions. It also better integrates some of the learning outcomes of the FCC program and I think will make this a very compelling project. Nice job!
+
+I think this will be a much improved structure!
+
+Strong intro structure. Just be careful as I am seeing two competing objectives here: 1) boosting tree resilience to hotter droughts in Central Texas, and 2) solving the research-practice gap.
+
+It is fine to have multiple objectives, just make sure that you are clear that there are multiple ones you are seeking to address. For the purposes of your Independent Project, I think the research-practice gap comes somewhat secondary to the focus on how to build resilience to hotter drought (more closely aligned with objectives of the FCC program).
+
+Would it make sense to have a section on how hotter droughts are driving mortality in trees? What is the physiological mechanism behind it? I feel some of this might be important in order to better understand the solutions/strategies for resilience.
+
+any refs more recent than that? referring to day & bassuk 1994
+
+This is where some overview/understanding of hot drought drives mortality from a physiological sense would be helpful. Try to think about who your audience might be. They are likely to be informed and have some information, but may not know all of the physiology of trees/mortality.
+
+I like this section - you are making recommendations based on your synthesis of the science (and also your own experiences). This is what the FCC independent project is all about. Would be great if you could find literature supporting your argument that order matters.
+
+Looks great - I think this is a really strong outline!
+
+
+
+Regarding changing my independent project:
+
+Hi George,
+
+I apologize for the delay in getting back to you. Your email unfortunately fell through the cracks at the end of the term. I think what you propose could work, but would also encourage you to stick with what you have already developed over the course of the term for your Independent Project. It's a little late in the game to move into redesign mode for the purposes of our course, in particular. Of course, things shift and evolve, and maybe it makes sense to tackle some of these new ideas in SNR 570.
+
+At the end of the day this is an Independent Project to meet the learning outcomes of the certificate. It is okay if it doesn't precisely match the state of the challenge as you see it at this point in time (you may even feel differently in 2 months). So, I'd encourage you to stick with what you've already developed as a workable project rather than going back to the design board.
+
+Good luck with getting your final outline together!
+
+Jacob
+
+
+
+
+
+MNR 538 Second Draft review
+The summary is looking good!
+
+I would introduce the problem first, because we (the readers) can't understand why you have these goals if you don't tell me the problem
+----up front comment
+
+These descriptions are insufficient. We need more text describing the figures, what do they mean in the context of your project 
+---regarding conceptual framework
+
+This is good. I think I would re-organize this section a bit. Put the description  under the subtitle of the section. and the caption can just be one sentence describing the figure. What software did you use to generate this diagram? It looks good -
+---on figure 1 I need a good explanation of the software....It was some kind of mermaid code renderer but I forgot exactly which one
+
+This needs to be expanded to the proper methodology of your approach. What are you measuring? how? Describe the model more in depth. 
+----on the implementation plan
+
+Broader impacts are not a list of things. You should be able to articulate in prose, how your project goals/deliverables benefit society. 
+----on broader impacts
+
+He was curious about the budget on the first draft so maybe I will work to remove that if it's not necessary for the USDA NOFO
+---it seems that it is required for the NOFO, let's explore the optimal way to represent it

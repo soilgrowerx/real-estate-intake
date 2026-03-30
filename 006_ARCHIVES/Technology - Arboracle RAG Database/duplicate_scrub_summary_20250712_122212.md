@@ -1,0 +1,412 @@
+# Arboracle Duplicate File Scrubbing Report
+*Generated: 2025-07-12 12:22:12*
+
+## 📊 Scrubbing Statistics
+- **Total Files Processed:** 954
+- **Successfully Removed:** 663
+- **Failed Removals:** 291
+- **Space Saved:** 3575.56 MB
+- **Success Rate:** 69.5%
+
+## 🗑️ Removal Reasons
+- **Content duplicate of 121_INTRODUCTION.pdf:** 1 files
+- **Content duplicate of 141_INTRODUCTION.pdf:** 1 files
+- **Content duplicate of 161_INTRODUCTION.pdf:** 1 files
+- **Content duplicate of 2018_Language_of_Conservation_Memo.pdf:** 1 files
+- **Content duplicate of 211_INTRODUCTION.pdf:** 1 files
+- **Content duplicate of 221_INTRODUCTION.pdf:** 1 files
+- **Content duplicate of 2_Tree_Ecology_and_Preservation.pdf:** 1 files
+- **Content duplicate of 400 Study Questions - Spreadsheet - Answers and Results.pdf:** 2 files
+- **Content duplicate of AGROFORESTRY.pdf:** 1 files
+- **Content duplicate of AGROFORESTRY_SCIENCE_POLICY_AND_PRACTICE.pdf:** 1 files
+- **Content duplicate of Advanced_Forestry_Study_024.pdf:** 1 files
+- **Content duplicate of Agroforestry.pdf:** 2 files
+- **Content duplicate of An_AI_Superconnector.pdf:** 1 files
+- **Content duplicate of Analysis_and_Synthesis.pdf:** 1 files
+- **Content duplicate of Assignment_1_Species.pdf:** 1 files
+- **Content duplicate of Austin_TX_ǀ_737-234-0110_ǀ_georgexmizecom_ǀ_LinkedIn_stewardofthetrees_1.pdf:** 1 files
+- **Content duplicate of Biodivers_Conserv.pdf:** 1 files
+- **Content duplicate of Boreal_Forest_Management_Guide.pdf:** 2 files
+- **Content duplicate of Carbon_Flux_Storage_and_Wildlife_Co-Benefits_in_a_Restoring_Estuary.pdf:** 1 files
+- **Content duplicate of Central Texas Vendors.pdf:** 1 files
+- **Content duplicate of Cert-Exam-Outline-CA (1).pdf:** 1 files
+- **Content duplicate of Certainly_Heres_a_comprehensive_compilation_of_detailed_information_for_your_pre.pdf:** 1 files
+- **Content duplicate of Certi_cate_of_Completion.pdf:** 1 files
+- **Content duplicate of Certified_Tree_Worker_Aerial_Lift_Specialist.pdf:** 1 files
+- **Content duplicate of Certified_Tropical_Timber.pdf:** 1 files
+- **Content duplicate of Changing_Landscapes.pdf:** 2 files
+- **Content duplicate of Chapter_2_Tree_Biology_Arborists_Certification_Study_Guide_ISA.pdf:** 2 files
+- **Content duplicate of Community-based_Forest_Management.pdf:** 1 files
+- **Content duplicate of Community_Ecology.pdf:** 1 files
+- **Content duplicate of Conserving_and_restoring_the_planets_tropical_forest_landscapes_is_critical.pdf:** 1 files
+- **Content duplicate of Course_Summary.pdf:** 1 files
+- **Content duplicate of Credo_Reference.pdf:** 1 files
+- **Content duplicate of DNA_deoxyribonucleic_acid.pdf:** 1 files
+- **Content duplicate of Decision_Support_for_Forest_Management.pdf:** 1 files
+- **Content duplicate of Dendritic_Forest_Management_A.pdf:** 1 files
+- **Content duplicate of Designing_a_New_Rights-of-Way.pdf:** 1 files
+- **Content duplicate of Development_of_Wetland_Plant.pdf:** 1 files
+- **Content duplicate of Douglas_Fir_Growth_Rate_Study.pdf:** 2 files
+- **Content duplicate of ECONOMICS_OF_FOREST_RESOURCES.pdf:** 1 files
+- **Content duplicate of EVSP311_Soil_Science.pdf:** 1 files
+- **Content duplicate of EVSP416_General_Ecology.pdf:** 1 files
+- **Content duplicate of Eastern_Deciduous_Forest.pdf:** 1 files
+- **Content duplicate of Ec_o_r_e_g_i_o_n_s_o_f_T_e_x_as.pdf:** 1 files
+- **Content duplicate of Ecological_Methods_in_Forest_Pest_Management.pdf:** 1 files
+- **Content duplicate of Ecology_77(3)_1996_pp_681-685.pdf:** 1 files
+- **Content duplicate of Ecology_Forestry_Management.pdf:** 2 files
+- **Content duplicate of Ecology_of_North_America_----_(Chapter_5_Grasslands_Plains_and_Prairies).pdf:** 1 files
+- **Content duplicate of Ecology_of_North_America_----_(Chapter_6_Regional_Grasslands_and_Related_Areas).pdf:** 1 files
+- **Content duplicate of Energy_Forestry_and_Biomass_Production.pdf:** 2 files
+- **Content duplicate of Executive_Summary_Report.pdf:** 1 files
+- **Content duplicate of FOREST_MENSURATION.pdf:** 1 files
+- **Content duplicate of FOREST_TOURISM_AND_RECREATION.pdf:** 1 files
+- **Content duplicate of Financing_Forests.pdf:** 1 files
+- **Content duplicate of Forest_Ecology.pdf:** 1 files
+- **Content duplicate of Forest_Ecology_and_Conservation.pdf:** 1 files
+- **Content duplicate of Forest_Funga.pdf:** 1 files
+- **Content duplicate of Forest_Landscape_Ecology.pdf:** 1 files
+- **Content duplicate of Forest_Landscapes_and_Global_Change.pdf:** 1 files
+- **Content duplicate of Forest_Resource.pdf:** 1 files
+- **Content duplicate of Forest_Service_Response_Indexes_Using_a.pdf:** 1 files
+- **Content duplicate of Forest_Service_to_Insects_and.pdf:** 1 files
+- **Content duplicate of Forest_Strategy.pdf:** 2 files
+- **Content duplicate of Forest_restoration_thinning_accelerates_development.pdf:** 1 files
+- **Content duplicate of Forestry_Research_Paper_009.pdf:** 1 files
+- **Content duplicate of Form_205General_Information.pdf:** 1 files
+- **Content duplicate of Frank_Sep2019.pdf:** 1 files
+- **Content duplicate of Fundraising_Kit.pdf:** 1 files
+- **Content duplicate of Future_Forest.pdf:** 1 files
+- **Content duplicate of GRAZING_ECOLOGY_AND_FOREST_HISTORY.pdf:** 1 files
+- **Content duplicate of G_N_AT_I_V_E_F_OOD_E.pdf:** 1 files
+- **Content duplicate of HANDBOOK_OF_FOREST_RESOURCE.pdf:** 1 files
+- **Content duplicate of Habitats_and_Species.pdf:** 1 files
+- **Content duplicate of Hill_Country_Natives.pdf:** 1 files
+- **Content duplicate of Hillsborough.pdf:** 1 files
+- **Content duplicate of How_do_plants_respond_to_their.pdf:** 1 files
+- **Content duplicate of How_to_use_this_guidebook_1.pdf:** 1 files
+- **Content duplicate of Hyperspectral_Advantage.pdf:** 4 files
+- **Content duplicate of ICP_Forests_Database_Report_under_the_UNECE_Convention.pdf:** 1 files
+- **Content duplicate of ICP_Manual_2020_part07_1_Ground_Vegetation_2020-1.pdf:** 1 files
+- **Content duplicate of INDIGENOUS_FRUIT_TREES_IN_THE_TROPICS.pdf:** 2 files
+- **Content duplicate of INSECT_SAMPLING.pdf:** 1 files
+- **Content duplicate of ISA Arborist Certification PLUS.pdf:** 1 files
+- **Content duplicate of ISA-CEU-Risk (1).pdf:** 1 files
+- **Content duplicate of I_am_the_Lorax_I_speak_for_the_trees.pdf:** 1 files
+- **Content duplicate of International_Journal_of.pdf:** 1 files
+- **Content duplicate of Introduction_to_Modeling_and_Simulation.pdf:** 1 files
+- **Content duplicate of Introduction_to_Permaculture.pdf:** 1 files
+- **Content duplicate of Invasive_Forest_Insects_Introduced_Forest_Trees.pdf:** 1 files
+- **Content duplicate of KayapoSoils.pdf:** 1 files
+- **Content duplicate of LINE_CLEARANCE_QUALIFICATION_STANDARD.pdf:** 1 files
+- **Content duplicate of Live_Native_Microalgae.pdf:** 2 files
+- **Content duplicate of Local_Forest_Management.pdf:** 1 files
+- **Content duplicate of Managing_Forest_Ecosystems.pdf:** 1 files
+- **Content duplicate of Many_states_have_a_designated_state_bird_flower_fish_tree_rock_etc_And_many_stat.pdf:** 1 files
+- **Content duplicate of Map_Unit_Description_Eckrant_cobbly_clay_1_to_8_percent_slopes---Williamson_Coun.pdf:** 1 files
+- **Content duplicate of Map_Unit_Description_Eckrant_stony_clay_0_to_3_percent_slopes_stony---Williamson.pdf:** 1 files
+- **Content duplicate of Map_Unit_Description_Houston_Black_clay_1_to_3_percent_slopes---Williamson_Count.pdf:** 1 files
+- **Content duplicate of Mixed_Document_005.pdf:** 1 files
+- **Content duplicate of Monitoring_Forest.pdf:** 1 files
+- **Content duplicate of My_Current_Courses.pdf:** 1 files
+- **Content duplicate of Name_Riparian_Forest.pdf:** 1 files
+- **Content duplicate of National_Tree.pdf:** 1 files
+- **Content duplicate of New_Veteran-Owned_Business.pdf:** 1 files
+- **Content duplicate of Nisqually_National_Wildlife_Refuge.pdf:** 1 files
+- **Content duplicate of Oak_Wilt_Epidemiology_Quercus_Rubra_Michigan_Study.pdf:** 1 files
+- **Content duplicate of Opinion_TRENDS_in_Ecology_and_Evolution_Vol22_No10.pdf:** 1 files
+- **Content duplicate of PHC Activity - Scenario 4.pdf:** 1 files
+- **Content duplicate of PLANTING_TREES.pdf:** 1 files
+- **Content duplicate of PRINT_FORM_CLEAR_FORM.pdf:** 1 files
+- **Content duplicate of PUBLISHED_BY_ALFRED_A_KNOPF_CANADA.pdf:** 2 files
+- **Content duplicate of Photosynthesis.pdf:** 1 files
+- **Content duplicate of Pitch_Decks.pdf:** 1 files
+- **Content duplicate of Pixxel-Forestry Whitepaper.pdf:** 2 files
+- **Content duplicate of Pixxel_Water_Quality_Whitepaper.pdf:** 2 files
+- **Content duplicate of Plant_Adaptation_to_the_Environment.pdf:** 1 files
+- **Content duplicate of Plant_Growth.pdf:** 1 files
+- **Content duplicate of Plant_Growth_and_Tissues.pdf:** 1 files
+- **Content duplicate of Plant_Structure.pdf:** 2 files
+- **Content duplicate of Plantations_and_Protected_Areas.pdf:** 1 files
+- **Content duplicate of Plants_are_Capable_of_Synthesizing_Animal.pdf:** 1 files
+- **Content duplicate of Portland_State_University.pdf:** 1 files
+- **Content duplicate of RIVER_RESEARCH_AND_APPLICATIONS.pdf:** 1 files
+- **Content duplicate of Reforestation_is_dependent_on.pdf:** 1 files
+- **Content duplicate of Respiration.pdf:** 1 files
+- **Content duplicate of S_PRINGER_S_ERIES_ON.pdf:** 2 files
+- **Content duplicate of Santiago_Chile.pdf:** 1 files
+- **Content duplicate of Sensing_for.pdf:** 2 files
+- **Content duplicate of So_You_Want_to_Start_a_Seed_Bank.pdf:** 1 files
+- **Content duplicate of Soil_Data_Analysis_and_Future_Impacts.pdf:** 1 files
+- **Content duplicate of Soil_MapWilliamson_County_Texas.pdf:** 1 files
+- **Content duplicate of Soil_Survey_and_Land_Use_Changes_in_Williamson_County_Texas.pdf:** 1 files
+- **Content duplicate of Steward Final Project - SS.pdf:** 1 files
+- **Content duplicate of Steward_05-904_20220222_1.pdf:** 1 files
+- **Content duplicate of TETLIN_NATIONAL.pdf:** 1 files
+- **Content duplicate of THE_SILVICULTURE_OF_TREES_USED_IN_BRITISH.pdf:** 1 files
+- **Content duplicate of TO_Interested_Parties.pdf:** 2 files
+- **Content duplicate of TO_WATER_AND_FORESTS.pdf:** 1 files
+- **Content duplicate of The_Ecology_and_Silviculture_of_Oaks.pdf:** 1 files
+- **Content duplicate of The_Ecology_of_Forest_Elephant_Distribution.pdf:** 1 files
+- **Content duplicate of The_Economics_of_Forest_Disturbances.pdf:** 1 files
+- **Content duplicate of The_following_video_lecture_addresses_life_history_as_it_relates_to_the_field_of.pdf:** 1 files
+- **Content duplicate of The_top_five_most_abundant_soil_types_within_the_Williamson_County_Texas_area_(a.pdf:** 1 files
+- **Content duplicate of This_is_an_Open_Access_book_distributed_under_the_terms_of_the_Creative_Commons.pdf:** 1 files
+- **Content duplicate of Tree_Climbers_Guide_Manual.pdf:** 2 files
+- **Content duplicate of Tree_Pruning_3rd_Edition_1.pdf:** 1 files
+- **Content duplicate of Tropical_Forestry.pdf:** 3 files
+- **Content duplicate of Two_Kinds_of_Reproduction.pdf:** 1 files
+- **Content duplicate of UFGP_Guidelines_-_Invasive_Species_Management.pdf:** 1 files
+- **Content duplicate of Urban_Forest_Stewardship_in_Austin_Texas.pdf:** 1 files
+- **Content duplicate of Urban_and_Community_Forestry.pdf:** 2 files
+- **Content duplicate of Using_the_ISA_Basic_Tree_Risk_Assessment_Form.pdf:** 1 files
+- **Content duplicate of VISUAL_Space_for_high-resolution_image_of_the_Nisqually_estuary_or_riparian_fore.pdf:** 1 files
+- **Content duplicate of Valuing_Agroforestry_Systems.pdf:** 1 files
+- **Content duplicate of Vegetative_Tree_Propagation_in.pdf:** 1 files
+- **Content duplicate of Vice_Chair_Member.pdf:** 1 files
+- **Content duplicate of Visual_High-resolution_image_of_the_Nisqually_estuary_or_riparian_forest.pdf:** 1 files
+- **Content duplicate of Volume_4_in_the_Academic_Press_TERRESTRIAL_ECOLOGY_SERIES.pdf:** 1 files
+- **Content duplicate of WaterSugar_Movement.pdf:** 1 files
+- **Content duplicate of Wetland_Animal_Ecology.pdf:** 1 files
+- **Content duplicate of What_is_a_plant.pdf:** 1 files
+- **Content duplicate of What_is_the_correct_scientific_name_for_the_oak_tree_genus.pdf:** 1 files
+- **Content duplicate of Wildlife_Refuge.pdf:** 1 files
+- **Content duplicate of Wood_Properties_and_Uses.pdf:** 1 files
+- **Content duplicate of apus-guidelines-for-student-use-of-ai-in-apus-academic-programs-v1-1.pdf:** 1 files
+- **Content duplicate of dense_shrubs_and_vines_with_some_trees.pdf:** 1 files
+- **Content duplicate of downloadfile-150.pdf:** 1 files
+- **Content duplicate of downloadfile-47.pdf:** 2 files
+- **Content duplicate of downloadfile-59.pdf:** 1 files
+- **Content duplicate of forestry_institutions_This_interdisciplinary_book_turns_that_focus_on_its_head_t.pdf:** 1 files
+- **Content duplicate of garyburnsforestrynctvcom.pdf:** 1 files
+- **Content duplicate of many_different_users_including_farmers_ranchers_foresters_agronomists_urban.pdf:** 1 files
+- **Content duplicate of psw_gtr095_harvey.pdf:** 1 files
+- **Content duplicate of to_house_12_million_people)_and_a_series_of_constructed_off-shore_islands_shaped.pdf:** 1 files
+- **Name duplicate of 1568133783318_2015-1214 Training Guide Book 1.pdf:** 1 files
+- **Name duplicate of 2015_04_22NTCGweb.pdf:** 1 files
+- **Name duplicate of 20230816-FINAL-2023-Bond-Projects-w-Disclaimer.pdf:** 1 files
+- **Name duplicate of 2_Tree_Ecology_and_Preservation.md:** 5 files
+- **Name duplicate of 2_Tree_Ecology_and_Preservation.pdf:** 5 files
+- **Name duplicate of AGROFORESTRY.md:** 3 files
+- **Name duplicate of AGROFORESTRY.pdf:** 3 files
+- **Name duplicate of AGROFORESTRY_SCIENCE_POLICY_AND_PRACTICE.md:** 1 files
+- **Name duplicate of AGROFORESTRY_SCIENCE_POLICY_AND_PRACTICE.pdf:** 1 files
+- **Name duplicate of A_client_has_called_you_to_inspect_her_pecan_tree_in_her_backyard_She_says_the_l.md:** 2 files
+- **Name duplicate of A_client_has_called_you_to_inspect_her_pecan_tree_in_her_backyard_She_says_the_l.pdf:** 2 files
+- **Name duplicate of Academic_Forestry_Paper_001.pdf:** 7 files
+- **Name duplicate of Advanced_Forestry_Study_001.pdf:** 25 files
+- **Name duplicate of Advanced_Forestry_Study_011.md:** 1 files
+- **Name duplicate of Advances_in_Agroforestry_10.md:** 1 files
+- **Name duplicate of Advances_in_Agroforestry_10.pdf:** 1 files
+- **Name duplicate of Agroforestry.md:** 2 files
+- **Name duplicate of Agroforestry.pdf:** 2 files
+- **Name duplicate of Agroforestry_in_Europe.md:** 1 files
+- **Name duplicate of Agroforestry_in_Europe.pdf:** 1 files
+- **Name duplicate of Analysis_and_Synthesis.md:** 1 files
+- **Name duplicate of Analysis_and_Synthesis.pdf:** 1 files
+- **Name duplicate of Arboriculture_Urban_Forestry_2019_45(5)155166.pdf:** 1 files
+- **Name duplicate of Arborist_Certification_Practice_Exams_400_Practice_Questions.md:** 1 files
+- **Name duplicate of Arborist_Certification_Practice_Exams_400_Practice_Questions.pdf:** 1 files
+- **Name duplicate of Austin_TX_ǀ_737-234-0110_ǀ_georgexmizecom_ǀ_LinkedIn_stewardofthetrees.md:** 1 files
+- **Name duplicate of Austin_TX_ǀ_737-234-0110_ǀ_georgexmizecom_ǀ_LinkedIn_stewardofthetrees.pdf:** 1 files
+- **Name duplicate of Biotechnology_in_Agriculture_and_Forestry.md:** 1 files
+- **Name duplicate of Biotechnology_in_Agriculture_and_Forestry.pdf:** 1 files
+- **Name duplicate of Certified_Tree_Worker_Aerial_Lift_Specialist.md:** 1 files
+- **Name duplicate of Certified_Tree_Worker_Aerial_Lift_Specialist.pdf:** 1 files
+- **Name duplicate of Changing_Landscapes.md:** 1 files
+- **Name duplicate of Changing_Landscapes.pdf:** 1 files
+- **Name duplicate of Chapter_2_Tree_Biology_Arborists_Certification_Study_Guide_ISA.md:** 1 files
+- **Name duplicate of Chapter_2_Tree_Biology_Arborists_Certification_Study_Guide_ISA.pdf:** 1 files
+- **Name duplicate of Community-based_Forest_Management.md:** 1 files
+- **Name duplicate of Community-based_Forest_Management.pdf:** 1 files
+- **Name duplicate of DNA_deoxyribonucleic_acid.md:** 1 files
+- **Name duplicate of DNA_deoxyribonucleic_acid.pdf:** 1 files
+- **Name duplicate of Decay_Arborist_News_Luley.pdf:** 1 files
+- **Name duplicate of Decision_Support_for_Forest_Management.md:** 1 files
+- **Name duplicate of Decision_Support_for_Forest_Management.pdf:** 1 files
+- **Name duplicate of Dendritic_Forest_Management_A.md:** 1 files
+- **Name duplicate of Dendritic_Forest_Management_A.pdf:** 1 files
+- **Name duplicate of Designing_a_New_Rights-of-Way.md:** 1 files
+- **Name duplicate of Designing_a_New_Rights-of-Way.pdf:** 1 files
+- **Name duplicate of ECONOMICS_OF_FOREST_RESOURCES.md:** 1 files
+- **Name duplicate of ECONOMICS_OF_FOREST_RESOURCES.pdf:** 1 files
+- **Name duplicate of EVSP416_General_Ecology.md:** 4 files
+- **Name duplicate of EVSP416_General_Ecology.pdf:** 4 files
+- **Name duplicate of Ecological_Methods_in_Forest_Pest_Management.md:** 1 files
+- **Name duplicate of Ecological_Methods_in_Forest_Pest_Management.pdf:** 1 files
+- **Name duplicate of Ecology_Forestry_Management.md:** 3 files
+- **Name duplicate of Ecology_Forestry_Management.pdf:** 3 files
+- **Name duplicate of Economics_of_Sustainable_Forest_Management.md:** 1 files
+- **Name duplicate of Economics_of_Sustainable_Forest_Management.pdf:** 1 files
+- **Name duplicate of Encylopedia of Fruit and Nuts Arbutus-strawberry tree 2008.pdf:** 1 files
+- **Name duplicate of FORESTRY_SCIENCES_1.md:** 1 files
+- **Name duplicate of FORESTRY_SCIENCES_1.pdf:** 1 files
+- **Name duplicate of FOREST_TOURISM_AND_RECREATION.md:** 1 files
+- **Name duplicate of FOREST_TOURISM_AND_RECREATION.pdf:** 1 files
+- **Name duplicate of Forest_Ecology_and_Conservation.md:** 1 files
+- **Name duplicate of Forest_Ecology_and_Conservation.pdf:** 1 files
+- **Name duplicate of Forest_Landscape_Ecology.md:** 1 files
+- **Name duplicate of Forest_Landscape_Ecology.pdf:** 1 files
+- **Name duplicate of Forest_Landscapes_and_Global_Change.md:** 1 files
+- **Name duplicate of Forest_Landscapes_and_Global_Change.pdf:** 1 files
+- **Name duplicate of Forest_Resource.md:** 1 files
+- **Name duplicate of Forest_Resource.pdf:** 1 files
+- **Name duplicate of Forest_Service_Agriculture_Information.md:** 1 files
+- **Name duplicate of Forest_Service_Agriculture_Information.pdf:** 1 files
+- **Name duplicate of Forest_Service_to_Insects_and.md:** 1 files
+- **Name duplicate of Forest_Service_to_Insects_and.pdf:** 1 files
+- **Name duplicate of Forest_Strategy.md:** 4 files
+- **Name duplicate of Forest_Strategy.pdf:** 4 files
+- **Name duplicate of Forestry_Audio_Lecture_001.mp3:** 19 files
+- **Name duplicate of Forestry_Document_001.docx:** 1 files
+- **Name duplicate of Forestry_Document_004.pdf:** 14 files
+- **Name duplicate of Forestry_Image_001.jpg:** 1 files
+- **Name duplicate of Forestry_Presentation_001.pptx:** 1 files
+- **Name duplicate of Forestry_Research_Paper_001.pdf:** 20 files
+- **Name duplicate of Forestry_Research_Paper_007.md:** 3 files
+- **Name duplicate of Forestry_Spreadsheet_001.xlsx:** 1 files
+- **Name duplicate of GRAZING_ECOLOGY_AND_FOREST_HISTORY.md:** 1 files
+- **Name duplicate of GRAZING_ECOLOGY_AND_FOREST_HISTORY.pdf:** 1 files
+- **Name duplicate of HANDBOOK_OF_FOREST_RESOURCE.md:** 1 files
+- **Name duplicate of HANDBOOK_OF_FOREST_RESOURCE.pdf:** 1 files
+- **Name duplicate of How_do_plants_respond_to_their.md:** 1 files
+- **Name duplicate of How_do_plants_respond_to_their.pdf:** 1 files
+- **Name duplicate of How_to_use_this_guidebook_1.md:** 1 files
+- **Name duplicate of How_to_use_this_guidebook_1.pdf:** 1 files
+- **Name duplicate of Hyperspectral_Advantage.md:** 5 files
+- **Name duplicate of Hyperspectral_Advantage.pdf:** 5 files
+- **Name duplicate of INDIGENOUS_FRUIT_TREES_IN_THE_TROPICS.md:** 1 files
+- **Name duplicate of INDIGENOUS_FRUIT_TREES_IN_THE_TROPICS.pdf:** 1 files
+- **Name duplicate of INSECT_SAMPLING.md:** 1 files
+- **Name duplicate of INSECT_SAMPLING.pdf:** 1 files
+- **Name duplicate of ISA_Certified_Arborist.md:** 1 files
+- **Name duplicate of ISA_Certified_Arborist.pdf:** 1 files
+- **Name duplicate of ISA_Certified_Arborist_Utility_Specialist.md:** 1 files
+- **Name duplicate of ISA_Certified_Arborist_Utility_Specialist.pdf:** 1 files
+- **Name duplicate of I_C_2_Fertilizer_Fertilize_trees_according_to_applicable_standards_and_best_prac.md:** 2 files
+- **Name duplicate of I_C_2_Fertilizer_Fertilize_trees_according_to_applicable_standards_and_best_prac.pdf:** 2 files
+- **Name duplicate of I_am_the_Lorax_I_speak_for_the_trees.md:** 1 files
+- **Name duplicate of I_am_the_Lorax_I_speak_for_the_trees.pdf:** 1 files
+- **Name duplicate of Invasive_Forest_Insects_Introduced_Forest_Trees.md:** 1 files
+- **Name duplicate of Invasive_Forest_Insects_Introduced_Forest_Trees.pdf:** 1 files
+- **Name duplicate of K. S. S. Nair - Tropical Forest Insect Pests_ Ecology, Impact, and Management (2007)-1.pdf:** 1 files
+- **Name duplicate of K. S. S. Nair - Tropical Forest Insect Pests_ Ecology, Impact, and Management (2007).pdf:** 1 files
+- **Name duplicate of LINE_CLEARANCE_QUALIFICATION_STANDARD.md:** 2 files
+- **Name duplicate of LINE_CLEARANCE_QUALIFICATION_STANDARD.pdf:** 2 files
+- **Name duplicate of Large_Forestry_Document_001.pdf:** 2 files
+- **Name duplicate of Large_Forestry_Manual_449_pages.pdf:** 1 files
+- **Name duplicate of Live_Native_Microalgae.md:** 1 files
+- **Name duplicate of Live_Native_Microalgae.pdf:** 1 files
+- **Name duplicate of Local_Forest_Management.md:** 1 files
+- **Name duplicate of Local_Forest_Management.pdf:** 1 files
+- **Name duplicate of Mark Baker, Jonathan Kusel - Community Forestry in the United States_ Learning from the Past, Crafting the Future (2003).pdf:** 1 files
+- **Name duplicate of Microsoft Word - CCP Final March05.doc.pdf:** 1 files
+- **Name duplicate of Mixed_Collection_2_Document_001.pdf:** 2 files
+- **Name duplicate of Mixed_Document_001.pdf:** 74 files
+- **Name duplicate of Monitoring_Forest.md:** 1 files
+- **Name duplicate of Monitoring_Forest.pdf:** 1 files
+- **Name duplicate of National_Tree.md:** 2 files
+- **Name duplicate of National_Tree.pdf:** 2 files
+- **Name duplicate of PUBLISHED_BY_ALFRED_A_KNOPF_CANADA.md:** 1 files
+- **Name duplicate of PUBLISHED_BY_ALFRED_A_KNOPF_CANADA.pdf:** 1 files
+- **Name duplicate of Photosynthesis.md:** 1 files
+- **Name duplicate of Photosynthesis.pdf:** 1 files
+- **Name duplicate of Pixxel-Forestry Whitepaper.pdf:** 1 files
+- **Name duplicate of Pixxel-Water Quality Whitepaper.pdf:** 1 files
+- **Name duplicate of Pixxel_Forestry_Whitepaper.pdf:** 1 files
+- **Name duplicate of Pixxel_Water_Quality_Whitepaper.pdf:** 1 files
+- **Name duplicate of Plant_Growth.md:** 1 files
+- **Name duplicate of Plant_Growth.pdf:** 1 files
+- **Name duplicate of Plant_Growth_and_Tissues.md:** 1 files
+- **Name duplicate of Plant_Growth_and_Tissues.pdf:** 1 files
+- **Name duplicate of Plant_Structure.md:** 3 files
+- **Name duplicate of Plant_Structure.pdf:** 3 files
+- **Name duplicate of Plantations_and_Protected_Areas.md:** 1 files
+- **Name duplicate of Plantations_and_Protected_Areas.pdf:** 1 files
+- **Name duplicate of Prairie-Ecosystem-Steward.pdf:** 1 files
+- **Name duplicate of RIVER_RESEARCH_AND_APPLICATIONS.md:** 1 files
+- **Name duplicate of RIVER_RESEARCH_AND_APPLICATIONS.pdf:** 1 files
+- **Name duplicate of Research_Publication_001.pdf:** 13 files
+- **Name duplicate of Respiration.md:** 1 files
+- **Name duplicate of Respiration.pdf:** 1 files
+- **Name duplicate of S_PRINGER_S_ERIES_ON.md:** 1 files
+- **Name duplicate of S_PRINGER_S_ERIES_ON.pdf:** 1 files
+- **Name duplicate of Sensing_for.md:** 4 files
+- **Name duplicate of Sensing_for.pdf:** 4 files
+- **Name duplicate of Steward-Trees_formation_doc-20220222.pdf:** 1 files
+- **Name duplicate of Steward_05-904_20220222.md:** 1 files
+- **Name duplicate of Steward_05-904_20220222.pdf:** 1 files
+- **Name duplicate of Steward_George_resume_20220210.pdf:** 1 files
+- **Name duplicate of Syllabus.pdf:** 1 files
+- **Name duplicate of THE_SILVICULTURE_OF_TREES_USED_IN_BRITISH.md:** 1 files
+- **Name duplicate of THE_SILVICULTURE_OF_TREES_USED_IN_BRITISH.pdf:** 1 files
+- **Name duplicate of TO_Interested_Parties.md:** 1 files
+- **Name duplicate of TO_Interested_Parties.pdf:** 1 files
+- **Name duplicate of TO_WATER_AND_FORESTS.md:** 1 files
+- **Name duplicate of TO_WATER_AND_FORESTS.pdf:** 1 files
+- **Name duplicate of Technical_Forestry_Document_001.pdf:** 6 files
+- **Name duplicate of The_Ecology_and_Silviculture_of_Oaks.md:** 1 files
+- **Name duplicate of The_Ecology_and_Silviculture_of_Oaks.pdf:** 1 files
+- **Name duplicate of The_Ecology_of_Forest_Elephant_Distribution.md:** 1 files
+- **Name duplicate of The_Ecology_of_Forest_Elephant_Distribution.pdf:** 1 files
+- **Name duplicate of The_Economics_of_Forest_Disturbances.md:** 2 files
+- **Name duplicate of The_Economics_of_Forest_Disturbances.pdf:** 2 files
+- **Name duplicate of Tree_Pruning_3rd_Edition.md:** 5 files
+- **Name duplicate of Tree_Pruning_3rd_Edition.pdf:** 5 files
+- **Name duplicate of Tropical_Forestry.md:** 5 files
+- **Name duplicate of Tropical_Forestry.pdf:** 5 files
+- **Name duplicate of Two_Kinds_of_Reproduction.md:** 2 files
+- **Name duplicate of Two_Kinds_of_Reproduction.pdf:** 2 files
+- **Name duplicate of UFSSYLLABUS.pdf:** 1 files
+- **Name duplicate of Urban_and_Community_Forestry.md:** 5 files
+- **Name duplicate of Urban_and_Community_Forestry.pdf:** 5 files
+- **Name duplicate of Using_the_ISA_Basic_Tree_Risk_Assessment_Form.md:** 1 files
+- **Name duplicate of Using_the_ISA_Basic_Tree_Risk_Assessment_Form.pdf:** 1 files
+- **Name duplicate of Valuing_Agroforestry_Systems.md:** 1 files
+- **Name duplicate of Valuing_Agroforestry_Systems.pdf:** 1 files
+- **Name duplicate of Vegetative_Tree_Propagation_in.md:** 1 files
+- **Name duplicate of Vegetative_Tree_Propagation_in.pdf:** 1 files
+- **Name duplicate of Volume_4_in_the_Academic_Press_TERRESTRIAL_ECOLOGY_SERIES.md:** 3 files
+- **Name duplicate of Volume_4_in_the_Academic_Press_TERRESTRIAL_ECOLOGY_SERIES.pdf:** 3 files
+- **Name duplicate of WaterSugar_Movement.md:** 1 files
+- **Name duplicate of WaterSugar_Movement.pdf:** 1 files
+- **Name duplicate of What_is_a_plant.md:** 1 files
+- **Name duplicate of What_is_a_plant.pdf:** 1 files
+- **Name duplicate of What_is_the_correct_scientific_name_for_the_oak_tree_genus.md:** 1 files
+- **Name duplicate of What_is_the_correct_scientific_name_for_the_oak_tree_genus.pdf:** 1 files
+- **Name duplicate of disease_affecting_Fagaceae_hosts_primarily_oaks_(Quercus_spp)_in_both_forest_and.md:** 1 files
+- **Name duplicate of disease_affecting_Fagaceae_hosts_primarily_oaks_(Quercus_spp)_in_both_forest_and.pdf:** 1 files
+- **Name duplicate of downloadfile-19.pdf:** 1 files
+- **Name duplicate of downloadfile-71.pdf:** 1 files
+- **Name duplicate of have_several_YouTube_videos_through_TreeStuffcom_Also_an_online_training_platfor.md:** 1 files
+- **Name duplicate of have_several_YouTube_videos_through_TreeStuffcom_Also_an_online_training_platfor.pdf:** 1 files
+- **Name duplicate of impact_minimize_tree_stress_consider_aesthetics_and_meet_utility_reliability_nee.md:** 1 files
+- **Name duplicate of impact_minimize_tree_stress_consider_aesthetics_and_meet_utility_reliability_nee.pdf:** 1 files
+- **Name duplicate of to_the_needless_removal_of_valuable_trees_when_more_con-.md:** 1 files
+- **Name duplicate of to_the_needless_removal_of_valuable_trees_when_more_con-.pdf:** 1 files
+
+## 📁 Locations Cleaned
+- **Obsidian Vault:** Enhanced .md files (duplicates removed)
+- **Training Folder:** Original source files (duplicates removed)
+
+## ✅ Cleanup Results
+- **Cleaner Organization:** No more confusing duplicate files
+- **Reduced Storage:** 3575.56 MB of duplicate data removed
+- **Better Navigation:** Clear, unique filenames throughout system
+- **Improved Performance:** Faster searches and operations
+
+## 🎯 Files Kept vs Removed
+The scrubber intelligently chose which files to keep based on:
+1. **Preference for original names** (without _1, _2 suffixes)
+2. **Shortest file paths** (closer to root directories)
+3. **Lowest suffix numbers** (when all files had suffixes)
+
+## 📋 Quality Assurance
+- All removals logged with full audit trail
+- Content comparison used to identify true duplicates
+- No data loss - only redundant copies removed
+- Original content preserved in best-named files
+
+---
+*Arboracle RAG Duplicate Scrubbing System*
+*Project: Technology - Arboracle RAG Database*
