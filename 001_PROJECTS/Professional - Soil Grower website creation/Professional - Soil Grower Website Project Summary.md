@@ -145,7 +145,7 @@ print(default_api.replace(
 # Command: Replace hardcoded API key with environment variable lookup
 print(default_api.replace(
     file_path="/home/george/Arboracle/soilgrower/call-gemini.php",
-    old_string="// --- IMPORTANT: PASTE YOUR SECRET API KEYS HERE ---\n$geminiApiKey = 'AIzaSyCBw3HdXfDtCx8pB4K3hxrbqStLnJCDyxc';",
+    old_string="// --- IMPORTANT: PASTE YOUR SECRET API KEYS HERE ---\n$geminiApiKey = '[REDACTED_API_KEY]';",
     new_string="// --- IMPORTANT: LOAD YOUR SECRET API KEY FROM AN ENVIRONMENT VARIABLE ---\n// NEVER hardcode API keys directly in your code. This is a major security risk.\n// Your key should be stored in a secure, non-public file (e.g., .env) or as a server environment variable.\n// Example: $geminiApiKey = getenv('GEMINI_API_KEY');\n$geminiApiKey = getenv('GEMINI_API_KEY');"
 ))
 ```
