@@ -246,11 +246,11 @@ In your project's `.env` file, you should give the key a descriptive name. A gre
 # .env file
 
 # Google Gemini API Key
-GOOGLE_GEMINI_API_KEY=AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+GOOGLE_GEMINI_API_KEY=[REDACTED_API_KEY]
 ```
 
 *   **`GOOGLE_GEMINI_API_KEY`**: This is a clear, unambiguous name. It tells you the provider (Google) and the service (Gemini).
-*   `AIzaSy...`: This will be your actual key that you get from Google AI Studio.
+*   `[REDACTED_API_KEY]...`: This will be your actual key that you get from Google AI Studio.
 
 ---
 
@@ -357,7 +357,7 @@ To put it all together, your project should look like this:
 
 **1. `.env` file (SECRET - DO NOT COMMIT TO GIT)**
 ```dotenv
-GOOGLE_GEMINI_API_KEY=AIzaSy...your...actual...key...
+GOOGLE_GEMINI_API_KEY=[REDACTED_API_KEY]...your...actual...key...
 ```
 
 **2. `.gitignore` file**
@@ -443,13 +443,13 @@ Based on our previous conversation, I suggested `GOOGLE_GEMINI_API_KEY`. However
 # .env file
 
 # This is the EXACT name the program is looking for
-GEMINI_API_KEY=AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+GEMINI_API_KEY=[REDACTED_API_KEY]
 ```
 
 **NOT** like this:
 ```dotenv
 # WRONG NAME (based on the error message)
-GOOGLE_GEMINI_API_KEY=AIzaSy...
+GOOGLE_GEMINI_API_KEY=[REDACTED_API_KEY]...
 ```
 
 ---
@@ -519,15 +519,15 @@ The `.env` file format is very simple, but it's easy to make a mistake.
 
 **Good:**
 ```dotenv
-GEMINI_API_KEY=AIzaSy...yourkey...
+GEMINI_API_KEY=[REDACTED_API_KEY]...yourkey...
 ```
 **Bad:**
 ```dotenv
 # Has spaces around the equals sign
-GEMINI_API_KEY = AIzaSy...yourkey...
+GEMINI_API_KEY = [REDACTED_API_KEY]...yourkey...
 
 # Has quotes that aren't needed
-GEMINI_API_KEY="AIzaSy...yourkey..."
+GEMINI_API_KEY="[REDACTED_API_KEY]...yourkey..."
 ```
 
 #### ✅ Step 4: The Final Reset
