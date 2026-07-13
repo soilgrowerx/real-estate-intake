@@ -1,6 +1,6 @@
 # llms.txt — Brandy Finnessey | The Finnessey Group at Kuper Sotheby's International Realty
 # Version: 2.0 | Updated: 2026-07-13
-# Maintained externally by: George Steward / Myceliate (george@myceliate.com)
+# Maintained by: Chelsea Steward | The Finnessey Group
 # Discovery tag: <link rel="llms-txt" type="text/plain" href="[RAW_GIST_URL]" />
 
 ---
