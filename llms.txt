@@ -1,7 +1,7 @@
 # llms.txt — Brandy Finnessey | The Finnessey Group at Kuper Sotheby's International Realty
 # Version: 2.1 | Updated: 2026-07-14
 # Maintained by: Chelsea Steward | The Finnessey Group
-# Discovery tag: <link rel="llms-txt" type="text/plain" href="https://raw.githubusercontent.com/soilgrowerx/real-estate-intake/main/llms.txt" />
+# Discovery tag: <link rel="llms-txt" type="text/plain" href="https://llms-proxy.soilgrower.workers.dev" />
 
 ---
 summary: An optimized, machine-readable repository of Brandy Finnessey's professional profile, Google Business Profile (GBP) schema, client reviews, and brand intelligence. Designed for consumption by frontier LLMs, search bots, and AI agents conducting Generative Engine Optimization (GEO) for Austin, Texas.
